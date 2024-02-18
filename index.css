@@ -1,0 +1,101 @@
+/* body {
+	height: 100%;
+}
+.login,table {
+	margin: 50px auto;
+	font-family: arial;
+	color: #168DA0;
+	border-radius: 10px;
+	border: 2px solid #168DA0;
+	padding: 12px 40px 25px;
+	margin-top: 70px;
+}
+
+input[type=text],
+input[type=password],select {
+	width: 99%;
+	padding: 12px;
+	margin-top: 8px;
+	border: 1px solid #168DA0;
+	padding-left: 5px;
+	font-size: 16px;
+	font-family: arial;
+}
+
+input[type=submit],a {
+	width: 100%;
+	background-color: #168DA0;
+	color: #fff;
+	padding: 12px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+table th{
+	color: red;
+}
+table td{
+	color: green;
+	width: 300px;
+	padding: 0 0 0 57px;
+} */
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.admin {
+    text-align: right;
+    padding: 10px;
+    background-color: #333;
+	height: 40px;
+}
+
+.admin a {
+	margin-top: 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    color: #fff;
+}
+
+.login {
+    width: 360px;
+    margin: 80px auto;
+	/* margin-top: 70px; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+	padding-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login h1 {
+    text-align: center;
+}
+
+.login form {
+    text-align: center;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.login input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #45a049;
+} 
