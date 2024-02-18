@@ -17,6 +17,7 @@ include('../dbconn.php');
 		<a href="subject/add_subject.html" style="display:block;text-align:center;text-decoration:none;">Add Subject</a>
 		<a href="student/remove_student.html" style="display:block;text-align:center;text-decoration:none;">Remove Student</a>
 		<a href="student/list_student.php" style="display:block;text-align:center;text-decoration:none;">List Students</a>
+		<a href="teacher/list_teacher.php" style="display:block;text-align:center;text-decoration:none;">List Faculty</a>
 		<a href="../../student_login.php" style="display:block;text-align:center;text-decoration:none;">Go To Home</a>
 		
     </div>
