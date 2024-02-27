@@ -1,3 +1,30 @@
+<?php
+session_start();
+include('../dbconn.php');
+if(isset($_POST["Login"])){
+	$id = $_POST["username"];
+	$pass = $_POST["password"];	
+	// $sql = mysql_query("SELECT * FROM student WHERE id ='$id' and password='$pass'");
+	$temp = "SELECT * FROM teacher_detail WHERE teacher_id = '$id' AND teacher_password = '$pass'";
+	$sql = $mysqli->query($temp);
+	$rows = $sql->num_rows;
+	// $rows = mysql_num_rows($sql);
+	if($rows==1) {
+		$user = $sql->fetch_assoc();
+
+		// $user = mysql_fetch_array($sql);
+		$_SESSION["id"] = $user['teacher_id'];
+		$_SESSION["Name"] = $user['teacher_name'];
+		$var = $user['teacher_id'];
+		$_SESSION["id"] = $var;
+		// echo $var;
+		header("Location: home.php");
+		}
+	else{
+		echo "<script>alert('Password does not Match !!!');</script>";
+		}
+}
+?>	
 <!DOCTYPE html>
 <html lang="en">
 <head>
